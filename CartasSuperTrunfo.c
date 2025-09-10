@@ -1,57 +1,105 @@
 #include <stdio.h>
 
+ 
              // Desafio Super Trunfo - Países
          // Tema 1 - Cadastro das Cartas
 
         int main(){
 
-            char Estado1[3] = "SP";
-            char Codigo1[20] ="A01";
-            char Cidade1[50] = "São Paulo";
-            int Populacao1 = 11;
-            float Area1 = 1521.11;
-            float PIB1 = 828.98;
-            int turistico1 = 13;
+            char Estado1,Estado2;
+            char Codigo1[20],Codigo2[20];
+            char Cidade1[50],Cidade2[50];
+            int Populacao1 ,Populacao2 ;
+            float Area1,Area2;
+            float PIB1,PIB2;
+            int turistico1,turistico2;
+
+                printf("-----Cadrasto Carta 1:----- \n \n");
+                
+              printf("Escolha uma letra entre A a G: \n");
+             scanf(" %c", &Estado1);
+                printf("\n");
+
+             printf("Código da Carta: (ex: A01,A02 )\n");
+             scanf("%s", Codigo1);
+                printf("\n");
+
+             printf("Digite a Cidade:\n");
+             scanf(" %[^\n]", Cidade1);
+                printf("\n");
+
+             printf("Quantidade da População: \n");
+             scanf("%d", &Populacao1);
+                printf("\n");
+
+             printf("Área em km²: \n");
+             scanf("%f", &Area1);
+                printf("\n");
+
+             printf("PIB da Cidade: \n");
+             scanf("%f", &PIB1);
+                printf("\n");
+
+             printf("Pontos Turísticos: \n");
+             scanf("%d", &turistico1);
+              printf(" \n \n");
+
+               printf("-----Cadrasto Carta 2:----- \n \n");
 
 
-             printf("CARTA DO ESTADO 1 \n");
-             printf("Estado: %s \n", Estado1);
-             printf("Código da Carta: %s\n", Codigo1);
-             printf("Cidade: %s \n", Cidade1);
-             printf("População: %d Milhões de habitantes\n", Populacao1);
-             printf("Àrea em km²: %.2f  km²\n", Area1);
-             printf("PIB: %.2f Bilhões de Reais\n", PIB1);
-              printf("Números de pontos turísticos: %d \n", turistico1);
-               printf("\n \n");
-                //colocado +1 (\n) para ter o espaço entre os registro e deixar mais facil de entender.
+             printf("Escolha uma letra entre A a G: \n");
+             scanf(" %c", &Estado2);
+                printf("\n");
+            
+             printf("Código da Carta: (ex: A01,A02 )\n");
+             scanf("%s", Codigo2);
+                printf("\n");
+
+             printf("Digite a Cidade:\n");
+             scanf(" %[^\n]", Cidade2);
+                printf("\n");
+             
+             printf("Quantidade da População: \n");
+             scanf("%d", &Populacao2);
+                printf("\n");
+               
+             printf("Área em km²: \n");
+             scanf("%f", &Area2);
+                printf("\n");
+
+             printf("PIB da Cidade: \n");
+             scanf("%f", &PIB2);
+                printf("\n");
+
+             printf("Pontos Turísticos: \n");
+             scanf("%d", &turistico2);
+              printf(" \n \n");
+
+                  printf("----CADRASTO COMPLETO DO CARTÃO 1---- \n \n");
+
+                printf("Letra: %c \n", Estado1);
+                printf("Codigo da carta: %s \n", Codigo1);
+                printf("Cidade: %s \n", Cidade1);
+                printf("População: %d Milhões de habitantes \n", Populacao1);
+                printf("Área em km²: %.2f km²\n", Area1);
+                printf("PIB da Cidade: %.2f Bilhões de Reais \n",PIB1);
+                printf("Total de Pontos Turísticos: %d \n ",turistico1);
+                printf("\n");
+
+                  printf("----CADRASTO COMPLETO DO CARTÃO 2---- \n \n");
+
+                printf("Letra: %c \n", Estado2);
+                printf("Codigo da carta: %s \n", Codigo2);
+                printf("Cidade: %s \n", Cidade1);
+                printf("População: %d Milhões de habitantes \n", Populacao2);
+                printf("Área em km²: %.2f km²\n", Area2);
+                printf("PIB da Cidade: %.2f Bilhões de Reais \n",PIB2);
+                printf("Total de Pontos Turísticos: %d \n \n",turistico2);
 
 
-                     //Coloquei as caixas em escalação de 1 e 2. 
-                     // exp: char ciade1, char cidade2
-                     // tudo está de acordo e organizado para deixar fácil o entendimento.
-                     // Coloquei os estados em [] para deixar mais especifico o caractere e deixar mais  intuitivo.
+                  // percebe-se que está tudo organizado e tendo uma funcionalidade expecional.
+                  //No momento não usei struct para agilizar a organização pois estou aprendendo ainda
+                  // O projeito feito para o Nivel Novato
 
-
-
-
-                   char Estado2[3] = "RJ";
-                   char Codigo2[20] ="A02";
-                   char Cidade2[50] = "Rio de Janeiro";
-                   int Populacao2 = 6;
-                   float Area2 = 1200.33;
-                   float PIB2 = 359.64;
-                   int turistico2 = 60;
-
-
-                    printf("CARTA DE ESTADO 2 \n");
-                    printf("Estado: %s \n", Estado2);
-                    printf("Código da Carta: %s\n", Codigo2);
-                    printf("Cidade: %s \n", Cidade2);
-                    printf("População: %d  Milhões de habitantes\n", Populacao2);
-                    printf("Àrea em km²: %.2f km² \n", Area2);
-                    printf("PIB: %.2f Bilhões de Reais \n", PIB2);
-                    printf("Números de pontos turísticos: %d \n", turistico2);
-
-                        //Percebe-se que tudo está organizado e de modo simples e direto para ser entendido.   
-                    return 0;
-        } 
+                return 0;
+        }

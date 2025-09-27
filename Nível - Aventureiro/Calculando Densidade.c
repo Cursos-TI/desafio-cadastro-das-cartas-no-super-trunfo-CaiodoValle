@@ -102,7 +102,7 @@
 
                 printf("Letra: %c \n", Estado2);
                 printf("Codigo da carta: %s \n", Codigo2);
-                printf("Cidade: %s \n", Cidade1);
+                printf("Cidade: %s \n", Cidade2);
                 printf("População: %d  de habitantes \n", Populacao2);
                 printf("Área em km²: %.2f km²\n", Area2);
                 printf("PIB da Cidade: %.2f Bilhões de Reais \n",PIB2);

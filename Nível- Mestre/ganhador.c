@@ -14,6 +14,7 @@
             float PIB1,PIB2;
             int turistico1,turistico2;
             float DensidadePopulacional,DensidadePopulacional2;
+            float InversoDensidade1,InversoDensidade2;
             double PIBperCapita,PIBperCapita2;
             float SuperPoderA,SuperPoderB;
             int resultado1,resultado2,resultado3,resultado4,resultado5,resultado6,resultado7;
@@ -47,6 +48,7 @@
                printf("\n");
 
                DensidadePopulacional = (double) Populacao1 / Area1;
+                InversoDensidade1 = Area1 / (float)Populacao1;
 
               PIBperCapita = (double) (PIB1 * 1000000000.0) / Populacao1;
 
@@ -78,6 +80,7 @@
                printf("\n");
 
                DensidadePopulacional2 = (double) Populacao2 / Area2;
+               InversoDensidade2 = Area2 / (float)Populacao2;
 
              printf("PIB da Cidade: \n");
              scanf("%f", &PIB2);
@@ -89,8 +92,8 @@
              scanf("%d", &turistico2);
               printf(" \n \n");
 
-              SuperPoderA = Populacao1 + Area1 + PIB1 + PIBperCapita + (DensidadePopulacional / DensidadePopulacional) + turistico1;
-              SuperPoderB = Populacao2 + Area2 + PIB2 + PIBperCapita2 + (DensidadePopulacional2 / DensidadePopulacional2) + turistico2;
+               SuperPoderA = (float)Populacao1 + Area1 + PIB1 + turistico1 + (float)PIBperCapita + InversoDensidade1;
+               SuperPoderB = (float)Populacao2 + Area2 + PIB2 + turistico2 + (float)PIBperCapita2 + InversoDensidade2;
 
               resultado1 = Populacao1 > Populacao2;
               resultado2 = Area1 < Area2;
